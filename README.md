@@ -18,7 +18,7 @@ Reasons, why you want to use this version:
 - You will never seed before you have download a certain amount of the file. How can you seed something you don't have?
 - Most large torrents have freeleech so you can set a limit for files that will be downloaded, small torrents will just appears to be seeding. but are just sitting there to avoid Hit 'n Runs
 
-```
+```text
 15:37:36: Seeder:                Thunderbirds.Are.Go.S03E17.1080p.HDTV.H264-DEADPOOL next update: 1800
 15:37:37: Updated:               Thunderbirds.Are.Go.S03E17.1080p.HDTV.H264-DEADPOOL updated
 15:37:37: Threshold:             Thunderbirds.Are.Go.S03E17.1080p.HDTV.H264-DEADPOOL size: 117.11 MB
@@ -34,7 +34,7 @@ Reasons, why you want to use this version:
 
 ### Set the speed
 
-```
+```text
 # kilobytes per second per torrent
 # 10 torrents 10 * 585
 # make sure you can do that in a speed test
@@ -43,14 +43,14 @@ echo 585 > seed_speed_file
 
 ### Get your torrents ready
 
-```
+```text
 mkdir torrents # (should already exist)
 cp *.torrent torrents/
 ```
 
 ### Start her up
 
-```
+```text
 python seedmage.py
 ```
 
@@ -65,7 +65,7 @@ It's going to look fairly suspicious if you are seeding it like a lunactic. \
 Big torrents tend to seed better (>50GB), also can be freeleech. \
 We don't seed torrents < 50GB
 
-```
+```text
 self.small_torrent_limit = 53687091200
 ```
 
@@ -76,24 +76,24 @@ If you are wondering, why isn't this seeding? \
 Well this means for a 100GB torrents you need to downlaods 11GB to 22GB first before uploading will start. \
 So choose freeleech torrents!!!!!!
 
-```
+```text
 self.threshold = self.seeder.torrent.total_size * random.uniform(0.11, 0.22)
 ```
 
 ### Upload speed
 
-```
+```text
 int(self.seed_per_second * self.announce_interval * random.uniform(0.45, 0.93))
 ```
 
 ### Download
 
-```
+```text
 int(self.seed_per_second * self.announce_interval * random.uniform(0.9, 1.73))
 ```
 
 ### Announce Interval
 
-```
+```text
 announce_interval = 1800
 ```
