@@ -4,7 +4,7 @@
   <img src=".github/logo.png" alt="seedmagepp logo" width="128" />
 </p>
 
-This is a heavily modifed version of seedmage.
+This is a heavily modified version of seedmage.
 <https://github.com/DimitriFourny/seedmage>
 
 Reasons, why you want to use this version:
@@ -73,7 +73,7 @@ self.small_torrent_limit = 53687091200
 
 You can't seed something that you haven't partially downloaded. \
 If you are wondering, why isn't this seeding? \
-Well this means for a 100GB torrents you need to downlaods 11GB to 22GB first before uploading will start. \
+Well this means for a 100GB torrents you need to download 11GB to 22GB first before uploading will start. \
 So choose freeleech torrents!!!!!!
 
 ```text
